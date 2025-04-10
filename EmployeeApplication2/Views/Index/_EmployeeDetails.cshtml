@@ -1,0 +1,22 @@
+﻿@model EmployeeApplication2.Models.Employee
+
+@if (Model != null)
+{
+    <div class="card shadow-lg p-4">
+        <h3 class="text-center text-primary">Employee Details</h3>
+        <div class="row" style="margin-top:5px;">
+            <div class="col-md-6">
+                <p style="font-size:12px;"><strong>Emp No:</strong> @Model.EmpNo</p>
+                <p style="font-size:12px;"><strong>Name:</strong> @Model.Name</p>
+                <p style="font-size:12px;"><strong>Date of Birth:</strong> @Model.Dob.ToString("yyyy-MM-dd")</p>
+                <p style="font-size:12px;"><strong>Date of Joining:</strong> @Model.Doj.ToString("yyyy-MM-dd")</p>
+            </div>
+            <div class="col-md-6">
+                <p style="font-size:12px;"><strong>Gender:</strong> @Model.Gender</p>
+                <p style="font-size:12px;"><strong>PAN:</strong> @Model.Pan</p>
+                <p style="font-size:12px;"><strong>Mobile No:</strong> @Model.MobileNo</p>
+                <p style="font-size:12px;"><strong>Email ID:</strong> @Model.EmailId</p>
+            </div>
+        </div>
+    </div>
+}
